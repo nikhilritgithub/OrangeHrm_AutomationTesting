@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Automation Suite]">
+  <test thread-count="5" name="Login Page Test(failed)">
+    <classes>
+      <class name="com.org.testpages.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="setUp"/>
+          <include name="setUpPage"/>
+        </methods>
+      </class> <!-- com.org.testpages.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test(failed) -->
+  <test thread-count="5" name="Home Page Test(failed)">
+    <classes>
+      <class name="com.org.testpages.HomePageTest">
+        <methods>
+          <include name="verifyClickingAdminMenu"/>
+          <include name="tearDown"/>
+          <include name="verifyNavigationToDashboard"/>
+          <include name="setUp"/>
+          <include name="verifyTitleAfterLogin"/>
+          <include name="setUpPage"/>
+          <include name="verifyWelcomeMessage"/>
+        </methods>
+      </class> <!-- com.org.testpages.HomePageTest -->
+    </classes>
+  </test> <!-- Home Page Test(failed) -->
+  <test thread-count="5" name="Admin Page Test(failed)">
+    <classes>
+      <class name="com.org.testpages.AdminPageTest">
+        <methods>
+          <include name="verifySystemUsersHeader"/>
+          <include name="tearDown"/>
+          <include name="verifyResetFunctionality"/>
+          <include name="verifyUserSearch"/>
+          <include name="verifySearchFieldIsVisible"/>
+          <include name="setUp"/>
+          <include name="verifyAddButtonVisible"/>
+          <include name="setUpPages"/>
+        </methods>
+      </class> <!-- com.org.testpages.AdminPageTest -->
+    </classes>
+  </test> <!-- Admin Page Test(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Automation Suite] -->

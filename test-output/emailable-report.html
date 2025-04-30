@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">8</td><td class="num">111,995</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.org.testpages.AdminPageTest</td><td><a href="#m0">testDeleteUserFunctionality</a></td><td rowspan="1">1728562157481</td><td rowspan="1">10071</td></tr><tr class="failedodd"><td rowspan="3">com.org.testpages.HomePageTest</td><td><a href="#m1">verifyWelcomeMessageAfterLogin</a></td><td rowspan="1">1728562084364</td><td rowspan="1">19</td></tr><tr class="failedodd"><td><a href="#m2">verifyWelcomeMessageDisplayed</a></td><td rowspan="1">1728562071486</td><td rowspan="1">10546</td></tr><tr class="failedodd"><td><a href="#m3">verifyWelcomeMessageText</a></td><td rowspan="1">1728562082037</td><td rowspan="1">24</td></tr><tr class="failedeven"><td rowspan="4">com.org.testpages.LoginPageTest</td><td><a href="#m4">testInvalidLogin</a></td><td rowspan="1">1728562119163</td><td rowspan="1">10265</td></tr><tr class="failedeven"><td><a href="#m5">testValidLogin</a></td><td rowspan="1">1728562129431</td><td rowspan="1">10280</td></tr><tr class="failedeven"><td><a href="#m6">verifyLogoIsVisible</a></td><td rowspan="1">1728562098640</td><td rowspan="1">10513</td></tr><tr class="failedeven"><td><a href="#m7">verifySignInTextIsEnabled</a></td><td rowspan="1">1728562109153</td><td rowspan="1">10010</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.org.testpages.AdminPageTest</td><td><a href="#m8">testAddUserFunctionality</a></td><td rowspan="1">1728562156982</td><td rowspan="1">499</td></tr><tr class="passedeven"><td><a href="#m9">verifyAdminHeaderDisplayed</a></td><td rowspan="1">1728562156258</td><td rowspan="1">580</td></tr><tr class="passedeven"><td><a href="#m10">verifyRolesHeaderDisplayed</a></td><td rowspan="1">1728562156894</td><td rowspan="1">85</td></tr><tr class="passedeven"><td><a href="#m11">verifyUserManagementHeaderDisplayed</a></td><td rowspan="1">1728562156841</td><td rowspan="1">53</td></tr><tr class="passedodd"><td rowspan="2">com.org.testpages.HomePageTest</td><td><a href="#m12">testNavigateToAdminPage</a></td><td rowspan="1">1728562082064</td><td rowspan="1">2195</td></tr><tr class="passedodd"><td><a href="#m13">verifyAdminMenuIsEnabled</a></td><td rowspan="1">1728562084264</td><td rowspan="1">98</td></tr><tr class="passedeven"><td rowspan="1">com.org.testpages.LoginPageTest</td><td><a href="#m14">verifyPageTitle</a></td><td rowspan="1">1728562098626</td><td rowspan="1">12</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.org.testpages.AdminPageTest#testDeleteUserFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@class=&apos;oxd-icon-button oxd-table-cell-action-space&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.org.pages.AdminPage.clickDeleteUser(AdminPage.java:54)
+	at com.org.testpages.AdminPageTest.testDeleteUserFunctionality(AdminPageTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;oxd-icon-button oxd-table-cell-action-space&apos;]&quot;}
+  (Session info: MicrosoftEdge=129.0.2792.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [a2762ae8e5409f42491a330da925b4ab, findElement {value=//button[@class=&apos;oxd-icon-button oxd-table-cell-action-space&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50171}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50171/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a2762ae8e5409f42491a330da925b4ab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.org.testpages.HomePageTest#verifyWelcomeMessageAfterLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(text(), &apos;Welcome&apos;)]&quot;}
+  (Session info: MicrosoftEdge=129.0.2792.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [09ca48dd4287f2aee20fdb18a60d2743, findElement {value=//h6[contains(text(), &apos;Welcome&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49868}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49868/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09ca48dd4287f2aee20fdb18a60d2743
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at com.org.pages.HomePage.getWelcomeMessageText(HomePage.java:37)
+	at com.org.testpages.HomePageTest.verifyWelcomeMessageAfterLogin(HomePageTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.org.testpages.HomePageTest#verifyWelcomeMessageDisplayed</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h6[contains(text(), &apos;Welcome&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.org.pages.HomePage.isWelcomeMessageDisplayed(HomePage.java:29)
+	at com.org.testpages.HomePageTest.verifyWelcomeMessageDisplayed(HomePageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(text(), &apos;Welcome&apos;)]&quot;}
+  (Session info: MicrosoftEdge=129.0.2792.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [09ca48dd4287f2aee20fdb18a60d2743, findElement {value=//h6[contains(text(), &apos;Welcome&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49868}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49868/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09ca48dd4287f2aee20fdb18a60d2743
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.org.testpages.HomePageTest#verifyWelcomeMessageText</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(text(), &apos;Welcome&apos;)]&quot;}
+  (Session info: MicrosoftEdge=129.0.2792.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [09ca48dd4287f2aee20fdb18a60d2743, findElement {value=//h6[contains(text(), &apos;Welcome&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49868}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49868/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09ca48dd4287f2aee20fdb18a60d2743
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at com.org.pages.HomePage.getWelcomeMessageText(HomePage.java:37)
+	at com.org.testpages.HomePageTest.verifyWelcomeMessageText(HomePageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.org.testpages.LoginPageTest#testInvalidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.79)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [04324a0798e5dee583837ad59f1dbba5, findElement {value=//input[@name=&apos;username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49974}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49974/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04324a0798e5dee583837ad59f1dbba5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4218)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
+	at java.base/java.lang.String.valueOf(String.java:4218)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at com.org.pages.LoginPage.enterUsername(LoginPage.java:41)
+	at com.org.testpages.LoginPageTest.testInvalidLogin(LoginPageTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.org.testpages.LoginPageTest#testValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.79)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [04324a0798e5dee583837ad59f1dbba5, findElement {value=//input[@name=&apos;username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49974}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49974/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04324a0798e5dee583837ad59f1dbba5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4218)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
+	at java.base/java.lang.String.valueOf(String.java:4218)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at com.org.pages.LoginPage.enterUsername(LoginPage.java:41)
+	at com.org.testpages.LoginPageTest.testValidLogin(LoginPageTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.org.testpages.LoginPageTest#verifyLogoIsVisible</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;orangehrm-login-logo&apos;]//img&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.org.pages.LoginPage.isLogoVisible(LoginPage.java:55)
+	at com.org.testpages.LoginPageTest.verifyLogoIsVisible(LoginPageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;orangehrm-login-logo&apos;]//img&quot;}
+  (Session info: MicrosoftEdge=129.0.2792.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [04324a0798e5dee583837ad59f1dbba5, findElement {value=//div[@class=&apos;orangehrm-login-logo&apos;]//img, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49974}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49974/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04324a0798e5dee583837ad59f1dbba5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.org.testpages.LoginPageTest#verifySignInTextIsEnabled</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[.=&apos; Login &apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.org.pages.LoginPage.isSignInTextEnabled(LoginPage.java:59)
+	at com.org.testpages.LoginPageTest.verifySignInTextIsEnabled(LoginPageTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.=&apos; Login &apos;]&quot;}
+  (Session info: MicrosoftEdge=129.0.2792.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [04324a0798e5dee583837ad59f1dbba5, findElement {value=//button[.=&apos; Login &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49974}, msedge: {msedgedriverVersion: 129.0.2792.79 (47754e458450..., userDataDir: C:\Users\ULLAGA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49974/devtoo..., se:cdpVersion: 129.0.2792.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04324a0798e5dee583837ad59f1dbba5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.org.testpages.AdminPageTest#testAddUserFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.org.testpages.AdminPageTest#verifyAdminHeaderDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.org.testpages.AdminPageTest#verifyRolesHeaderDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.org.testpages.AdminPageTest#verifyUserManagementHeaderDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.org.testpages.HomePageTest#testNavigateToAdminPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.org.testpages.HomePageTest#verifyAdminMenuIsEnabled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.org.testpages.LoginPageTest#verifyPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
